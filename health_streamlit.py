@@ -131,6 +131,7 @@ with st.sidebar:
     else:
         st.warning("Please upload a CSV file to proceed.")
 
+#used GPT for session state, was getting a reload error everytime I selected a different model
 # Model loading based on selection
 if st.session_state.model_selection:
     model_selection = st.session_state.model_selection
